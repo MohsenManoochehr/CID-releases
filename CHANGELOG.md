@@ -4,6 +4,10 @@ All notable changes to CID. Download installers from the [releases page](https:/
 
 ## [1.2.0] - 2026-10-09
 
+### Now on Linux
+
+- CID is available for **Linux** as a `.deb` package for Debian, Ubuntu and derivatives (64-bit Intel/AMD). Install it with `sudo apt install ./cid_1.2.0_amd64.deb`. Workflows that run on your computer use Bash.
+
 ### New look
 
 - Redesigned the whole app, with **light and dark themes**. Pick Light, Dark or System in Settings; the window's title bar follows along.
