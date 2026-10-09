@@ -4,9 +4,11 @@ All notable changes to CID. Download installers from the [releases page](https:/
 
 ## [1.2.0] - 2026-10-09
 
-### Now on Linux
+### Now on macOS and Linux
 
-- CID is available for **Linux** as a `.deb` package for Debian, Ubuntu and derivatives (64-bit Intel/AMD). Install it with `sudo apt install ./cid_1.2.0_amd64.deb`. Workflows that run on your computer use Bash.
+- CID is available for **macOS**: `cid-1.2.0-arm64.dmg` for Apple Silicon (M1 and newer) and `cid-1.2.0-x64.dmg` for Intel Macs. Drag CID into Applications. It isn't notarized by Apple yet, so the first time you open it, go to **System Settings → Privacy & Security** and click **Open Anyway**.
+- CID is available for **Linux** as a `.deb` package for Debian, Ubuntu and derivatives (64-bit Intel/AMD). Install it with `sudo apt install ./cid_1.2.0_amd64.deb`.
+- On macOS and Linux, workflows that run on your computer use Bash. On macOS they get the same PATH as your terminal, so Homebrew tools are found.
 
 ### New look
 
