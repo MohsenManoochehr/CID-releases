@@ -2,6 +2,38 @@
 
 All notable changes to CID. Download installers from the [releases page](https://github.com/MohsenManoochehr/CID-releases/releases).
 
+## [1.3.0] - 2026-10-12
+
+### Teams
+
+- **Share a project** from its new **Members** tab. Invite people by email and pick a role: **Admin**, **Member** or **Viewer**. They accept from the link in the email, creating a CID account first if they need one.
+- Owners can do everything, including deleting and transferring the project. Admins edit the project and manage members. Members run and cancel workflows and see everything except secret values. Viewers can only read workflows, runs and logs.
+- Projects shared with you appear under **Shared with you** on the Projects page, with the owner's name, and with a people icon in the sidebar.
+- Actions your role doesn't allow are greyed out, with a tooltip explaining why.
+- Owners can hand a project to another member; everyone else can leave from Settings.
+
+### Where runs happen
+
+- Runs always happen on the computer that starts them. Workflows that run on this computer say **Runs on your computer** next to Run.
+- When several members have CID open, each push and each scheduled run happens **once**: the first computer to pick it up runs it, the others skip it.
+- Runs show who started them and where ("Started by Sara on SARA-LAPTOP") in the Runs tab and the run panel.
+- When you open a project shared with you, CID asks where your copy of the repository is. Folders, shells, working folders, artifacts and remote paths stay per computer.
+
+### Updates
+
+- When a new version is out, CID shows what's new in a window, once per version. The sidebar card stays until you update.
+- **Windows: update in place.** Click **Update now**, keep working while it downloads, then **Restart and update**. Updates also install the next time you close CID. This works from 1.3.0 on, so install this version yourself.
+- On macOS and Linux, **Download installer** gives you the right file for your computer.
+
+### Fixes
+
+- A project with several push workflows now starts all of them on a new commit; before, only one ran.
+- Changes made on another computer, and newly shared projects, show up within five minutes without restarting CID.
+- On Linux, workflows that run on this computer now find tools set up in your shell, like Node from nvm, even when CID is opened from the app menu.
+- CID 1.2.0 showed an error screen instead of the update card once a newer version was available. If that's how you got here: download this version from the [releases page](https://github.com/MohsenManoochehr/CID-releases/releases) and install it over 1.2.0. Your projects and settings are kept.
+
+Everyone on a shared project should update to 1.3.0 so pushes and schedules don't run twice.
+
 ## [1.2.0] - 2026-10-09
 
 ### Now on macOS and Linux
