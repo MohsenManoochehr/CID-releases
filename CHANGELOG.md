@@ -2,6 +2,19 @@
 
 All notable changes to CID. Download installers from the [releases page](https://github.com/MohsenManoochehr/CID-releases/releases).
 
+## [1.4.0] - 2026-11-19
+
+### Export and import
+
+- **Workflows:** export one from its **⋯** menu (**Export as JSON**), or every workflow in a project with **Export all** on the Workflows tab. **Import** adds the workflows from a file to any project.
+- A workflow file keeps the trigger, server, steps and whether the workflow is enabled, plus your shell, working folders and artifact paths. Run history isn't included.
+- On import, a name that's already taken gets a number, like "Deploy (2)", so nothing is overwritten. Servers are matched by name; a workflow whose server isn't in the project is skipped instead of running on your computer. Imported push and cron workflows start running straight away, and CID warns you before importing them.
+- **Variables:** **Export** and **Import** on the Environment tab. Importing adds new names and overwrites existing ones, after showing you which.
+- Secrets are never exported, because CID can't read their values back.
+- Only owners and admins can import. Anyone who can see the workflows or variables can export them.
+
+More in the docs: [Export & import](https://pumpkins.dev/docs/cid/export-and-import).
+
 ## [1.3.0] - 2026-10-12
 
 ### Teams
